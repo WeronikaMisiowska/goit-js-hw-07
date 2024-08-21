@@ -11,7 +11,9 @@ function getRandomHexColor() {
         [...boxes.children].forEach(child => child.remove());
     };
 
-    const createBoxes = (amount) => {
+const createBoxes = (amount) => {
+        
+        destroyBoxes();
         
         console.log(amount);
         
